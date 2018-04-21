@@ -51,17 +51,17 @@ public class VIN {
     }
 
     public String getInformationVIN() {
-        return "Pais: " + getCountry() + " - [" + getCountryCode() + "] \n"
-                + "Fabricante: " + getManufacturer() + " - [" + getManufacturerCode() + "] \n"
-                + "Descripcion de Vehiculo: [" + getVDSCode() + "] \n"
-                + "Tipo de Carroceria: " + getBodyStyle() + " - [" + getBodyStyleCode() + "] \n"
-                + "Tipo de Motor: [" + getEngineCode() + "] \n"
-                + "Modelo: [" + getModelCode() + "] \n"
-                + "Digito de Confirmacion: [" + getWeightDigit() + "] \n"
+        return "Country: " + getCountry() + " - [" + getCountryCode() + "] \n"
+                + "Manufaacturer: " + getManufacturer() + " - [" + getManufacturerCode() + "] \n"
+                + "Vehicle Description: [" + getVDSCode() + "] \n"
+                + "Body Style: " + getBodyStyle() + " - [" + getBodyStyleCode() + "] \n"
+                + "Engine: [" + getEngineCode() + "] \n"
+                + "Model: [" + getModelCode() + "] \n"
+                + "Check-Digit: [" + getWeightDigit() + "] \n"
                 + validateWeightDigit() + " \n"
-                + "Año: " + getYear() + " - [" + getYearCode() + "] \n"
-                + "Planta de Ensamblaje: [" + getAssemblyPlantCode() + "] \n"
-                + "Numero de Serie: [" + getSerialNumber() + "] \n";
+                + "Year: " + getYear() + " - [" + getYearCode() + "] \n"
+                + "Assembly Plant: [" + getAssemblyPlantCode() + "] \n"
+                + "Serial Number: [" + getSerialNumber() + "] \n";
     }
 
     public String getCountryCode() {
@@ -141,7 +141,7 @@ public class VIN {
      * @return Check-digit
      */
     private String validateWeightDigit() {
-        return getWeightDigit() == value.charAt(8) ? "VIN valido" : "VIN NO valido ";
+        return getWeightDigit() == value.charAt(8) ? "Valid VIN" : "Not Valid VIN";
     }
 
     public String getYearCode() {

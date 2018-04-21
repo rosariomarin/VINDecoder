@@ -21,7 +21,7 @@ public class VINDecoder {
             System.out.println("-------------------------------------------");
             System.out.println("\t VIN Decoder (17 Digits)");
             System.out.println("-------------------------------------------");
-            System.out.println("Numero de VIN:");
+            System.out.println("VIN Number:");
             String input;
             Scanner scan = new Scanner(System.in);
             input = scan.nextLine();
