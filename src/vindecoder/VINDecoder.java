@@ -7,7 +7,7 @@ package vindecoder;
 
 /**
  *
- * @author rmarin
+ *  @author Rosario Marin
  */
 public class VINDecoder {
 
