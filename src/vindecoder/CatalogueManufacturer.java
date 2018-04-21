@@ -9,7 +9,7 @@ import java.util.HashMap;
 
 /**
  *
- * @author rmarin
+ * @author Rosario Marin
  */
 class CatalogueManufacturer extends HashMap<String, String> {
 

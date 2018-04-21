@@ -10,7 +10,7 @@ import java.util.Map;
 
 /**
  *
- * @author rmarin
+ * @author Rosario Marin
  */
 class VINConstants {
 
