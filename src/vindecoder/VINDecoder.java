@@ -5,6 +5,8 @@
  */
 package vindecoder;
 
+import java.util.Scanner;
+
 /**
  *
  *  @author Rosario Marin
@@ -15,7 +17,23 @@ public class VINDecoder {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+                try {
+            System.out.println("-------------------------------------------");
+            System.out.println("\t VIN Decoder (17 Digits)");
+            System.out.println("-------------------------------------------");
+            System.out.println("Numero de VIN:");
+            String input;
+            Scanner scan = new Scanner(System.in);
+            input = scan.nextLine();
+            
+            VIN vin = new VIN(input);
+            System.out.println("");
+            System.out.println(vin.getInformationVIN());
+            
+        } catch (Exception ex) {
+            System.out.println("ERROR while decoding VIN");
+            //Logger.getLogger(VINDecoder.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
 }
